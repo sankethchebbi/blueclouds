@@ -5,68 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BlueClouds.in | Cloud Consulting</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CDN stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <h1>BlueClouds.in</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
+  <header class="container-fluid bg-primary text-white py-3">
+    <div class="container">
+      <h1 class="mb-0">BlueClouds.in</h1>
+      <nav>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#services" class="text-white">Services</a></li>
+          <li class="list-inline-item"><a href="#about" class="text-white">About Us</a></li>
+          <li class="list-inline-item"><a href="#contact" class="text-white">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Cloud Consulting Services</h2>
-    <p>We help businesses migrate to the cloud and optimize their operations.</p>
-    <button>Contact Us</button>
+  <section class="container-fluid bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h2 class="mb-3">Cloud Consulting Services</h2>
+          <p class="lead mb-5">We help businesses migrate to the cloud and optimize their operations.</p>
+          <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Cloud Migration</li>
-      <li>Cloud Infrastructure Design and Deployment</li>
-      <li>Cloud Cost Optimization</li>
-      <li>Cloud Security</li>
-      <li>Cloud Monitoring and Management</li>
-    </ul>
+  <section id="services" class="container py-5">
+    <h3 class="mb-4">Our Services</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li>Cloud Migration</li>
+          <li>Cloud Infrastructure Design and Deployment</li>
+          <li>Cloud Cost Optimization</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li>Cloud Security</li>
+          <li>Cloud Monitoring and Management</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="about">
-    <h3>About Us</h3>
-    <p>We are a team of experienced cloud consultants who specialize in helping businesses of all sizes leverage the power of the cloud. With our expertise, we can help you:</p>
-    <ul>
-      <li>Migrate to the cloud</li>
-      <li>Optimize your cloud infrastructure</li>
-      <li>Reduce your cloud costs</li>
-      <li>Ensure your cloud security</li>
-      <li>Efficiently manage and monitor your cloud resources</li>
-    </ul>
+  <section id="about" class="container py-5">
+    <h3 class="mb-4">About Us</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="lead mb-4">We are a team of experienced cloud consultants who specialize in helping businesses of all sizes leverage the power of the cloud.</p>
+        <ul>
+          <li>Migrate to the cloud</li>
+          <li>Optimize your cloud infrastructure</li>
+          <li>Reduce your cloud costs</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>Ensure your cloud security</li>
+          <li>Efficiently manage and monitor your cloud resources</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h3>Contact Us</h3>
+  <section id="contact" class="container py-5">
+    <h3 class="mb-4">Contact Us</h3>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
-
-      <button type="submit">Send</button>
+      <div class="form-row">
+        <div class="col-md-6 form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </form>
   </section>
-
-  <footer>
-    <p>&copy; 2023 BlueClouds.in</p>
-  </footer>
-
 </body>
-</html>
+</html>  
