@@ -5,95 +5,197 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BlueClouds.in</title>
-  <!-- Bootstrap CDN stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #212529;
+    }
+    .jumbotron {
+      background-image: url('https://cdn.pixabay.com/photo/2015/04/20/13/10/cloud-731191_960_720.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 500px;
+    }
+    .navbar {
+      background-color: #203d86;
+      color: #ffffff;
+      padding: 0.5rem;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .navbar-nav a {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0 1rem;
+    }
+    .navbar-nav a:hover {
+      color: #e8e8e8;
+    }
+    .card {
+      border: none;
+      border-radius: 0;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    }
+    .card-body h5 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #203d86;
+    }
+    .card-body p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .card-footer {
+      background-color: #f5f5f5;
+      border-top: none;
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-  <header class="container-fluid bg-primary text-white py-3">
-    <div class="container">
-      <h1 class="mb-0">BlueClouds.in</h1>
-      <nav>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><a href="#services" class="text-white">Services</a></li>
-          <li class="list-inline-item"><a href="#about" class="text-white">About Us</a></li>
-          <li class="list-inline-item"><a href="#contact" class="text-white">Contact Us</a></li>
-        </ul>
-      </nav>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">BlueClouds.in</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
     </div>
-  </header>
-
-  <section class="container-fluid bg-light py-5">
+  </nav>
+  
+  <div class="jumbotron">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto text-center">
-          <h2 class="mb-3">Cloud Consulting Services</h2>
-          <p class="lead mb-5">We help businesses migrate to the cloud and optimize their operations.</p>
-          <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+      <h1 class="display-4 text-white">Welcome to BlueClouds.in</h1>
+      <p class="lead text-white">We provide cloud consulting services for your business needs.</p>
+      <a class="btn btn-primary btn-lg" href="#services" role="button">Learn more</a>
+    </div>
+  </div>
+  
+  <div id="services" class="container py-5">
+    <h2 class="mb-5">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Strategy</h5>
+            <p class="card-text">We help businesses define their cloud strategy, assess cloud readiness, and select the right cloud platforms.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Migration</h5>
+            <p class="card-text">We help businesses migrate their existing applications and data to the cloud, ensuring minimal disruption to operations.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Management</h5>
+            <p class="card-text">We provide ongoing management and support for cloud infrastructure, ensuring optimal performance and cost efficiency.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="services" class="container py-5">
-    <h3 class="mb-4">Our Services</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <ul class="list-unstyled">
-          <li>Cloud Migration</li>
-          <li>Cloud Infrastructure Design and Deployment</li>
-          <li>Cloud Cost Optimization</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="list-unstyled">
-          <li>Cloud Security</li>
-          <li>Cloud Monitoring and Management</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+  </div>
+  
   <section id="about" class="container py-5">
     <h3 class="mb-4">About Us</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <p class="lead mb-4">We are a team of experienced cloud consultants who specialize in helping businesses of all sizes leverage the power of the cloud.</p>
-        <ul>
-          <li>Migrate to the cloud</li>
-          <li>Optimize your cloud infrastructure</li>
-          <li>Reduce your cloud costs</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul>
-          <li>Ensure your cloud security</li>
-          <li>Efficiently manage and monitor your cloud resources</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <p>We are a team of cloud consultants with years of experience in helping businesses migrate to and manage cloud infrastructure. Our mission is to help businesses take advantage of the benefits of cloud services while minimizing the risks and costs associated with cloud adoption. We offer a wide range of services including cloud strategy development, cloud migration, cloud architecture design, and cloud infrastructure management. Our team consists of certified cloud professionals who are experts in various cloud platforms including Amazon Web Services, Microsoft Azure, Google Cloud Platform, and more.</p>
 
-  <section id="contact" class="container py-5">
-    <h3 class="mb-4">Contact Us</h3>
-    <form>
-      <div class="form-row">
-        <div class="col-md-6 form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your name">
-        </div>
-        <div class="col-md-6 form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Your email">
+    </section>
+    <section id="services" class="container-fluid py-5">
+      <div class="container">
+        <h3 class="mb-4">Our Services</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cloud Strategy Development</h5>
+                <p class="card-text">We help businesses define their cloud strategy, identify the best cloud solutions, and create a roadmap for successful cloud adoption.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cloud Migration</h5>
+                <p class="card-text">We help businesses migrate their applications, data, and infrastructure to the cloud with minimal downtime and disruption.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cloud Infrastructure Management</h5>
+                <p class="card-text">We provide ongoing management and support for cloud infrastructure, ensuring optimal performance and cost-effectiveness.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="form-row">
-        <div class="col form-group">
+    </section>
+    <section id="contact" class="container py-5">
+      <h3 class="mb-4">Contact Us</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
           <label for="message">Message</label>
           <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+    <footer class="container-fluid py-3">
+      <div class="container text-center">
+        <p>&copy; 2023 BlueClouds.in. All Rights Reserved.</p>
       </div>
-      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-    </form>
-  </section>
-</body>
-</html>  
+    </footer>
+  </body>
+  </html>
